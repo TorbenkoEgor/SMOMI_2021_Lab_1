@@ -23,11 +23,11 @@ build_model:
 
 Метрика точности
  
-![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/master/graphs/train1_acc.png)
+![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/main/graphs/train1_acc.png)
 
 Метрика функции потерь
 
-![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/master/graphs/train1_loss.png)
+![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/main/graphs/train1_loss.png)
 
 ---
 
@@ -54,11 +54,11 @@ build_model
 
 Метрики точности
 
-![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/master/graphs/train2_acc.png)
+![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/main/graphs/train2_acc.png)
 
 Метрика функции потерь
 
-![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/master/graphs/train2_loss.png)
+![Image alt](https://github.com/TorbenkoEgor/SMOMI_2021_Lab_1/blob/main/graphs/train2_loss.png)
 
 ---
 
