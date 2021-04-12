@@ -8,12 +8,14 @@
 
 Модель использует 1 свёрточных слоя. В свёрточном слое 8 фильтров.
 
-  inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3))
-  x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(inputs)
-  x = tf.keras.layers.MaxPool2D()(x)
-  x = tf.keras.layers.Flatten()(x)
-  outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)
-  return tf.keras.Model(inputs=inputs, outputs=outputs)
+build_model:
+
+    inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3))
+    x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(inputs)
+    x = tf.keras.layers.MaxPool2D()(x)
+    x = tf.keras.layers.Flatten()(x)
+    outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)
+    return tf.keras.Model(inputs=inputs, outputs=outputs)
 
 Тренировочные данные - Серый график
 
@@ -33,16 +35,18 @@
 
 Модель использует 3 свёрточных слоя. В свёрточных слоях 16, 16, 8 фильтров соответсвенно.
 
-  inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3))
-  x = tf.keras.layers.Conv2D(filters=16, kernel_size=3)(inputs)
-  x = tf.keras.layers.MaxPool2D()(x)
-  x = tf.keras.layers.Conv2D(filters=16, kernel_size=3)(x)
-  x = tf.keras.layers.MaxPool2D()(x)
-  x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(x)
-  x = tf.keras.layers.MaxPool2D()(x)
-  x = tf.keras.layers.Flatten()(x)
-  outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)
-  return tf.keras.Model(inputs=inputs, outputs=outputs)
+build_model
+
+    inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3))
+    x = tf.keras.layers.Conv2D(filters=16, kernel_size=3)(inputs)
+    x = tf.keras.layers.MaxPool2D()(x)
+    x = tf.keras.layers.Conv2D(filters=16, kernel_size=3)(x)
+    x = tf.keras.layers.MaxPool2D()(x)
+    x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(x)
+    x = tf.keras.layers.MaxPool2D()(x)
+    x = tf.keras.layers.Flatten()(x)
+    outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)
+    return tf.keras.Model(inputs=inputs, outputs=outputs)
 
 Тренировочные данные - Голубой график
 
